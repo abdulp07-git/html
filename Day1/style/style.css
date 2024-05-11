@@ -1,0 +1,49 @@
+body {
+    margin: 0%;
+}
+h1{
+    color: #c22947;
+    font-weight: 400;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: black;
+    background-size: cover;
+}
+
+h2{
+    color: #b3af47;
+    font-weight: 100;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+img{
+    height: 300;
+    width: 400;
+    visibility: initial;
+}
+
+button{
+    height: 100px;
+    width: 250px;
+    background-color: green;
+    color: white;
+}
+
+/*ID name*/
+#link{
+    background-color: rgb(161, 182, 160);
+    
+}
+
+/* class */
+.naughty{
+    color: hotpink;
+}
+
+.header{
+    height: 200px;
+    width: auto;
+    background-color: aliceblue;
+    color: hotpink;
+    border: 3px solid;
+    border-color: black;
+    padding-left: 30px;  
+}
