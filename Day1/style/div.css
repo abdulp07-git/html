@@ -1,14 +1,22 @@
 
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+   } 
+
 body {
     margin: 0%;
 }
 div{
     /**border:1px solid black;  */ 
+    margin: 0%;
 }
 
 
 .outer_div{
     background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    margin: 0%;
 }
 
 
@@ -23,6 +31,7 @@ div{
     float: left;
     width: 20%;
     height: 800px;
+    padding-left: 30px;
     /*background-color: #052423;*/
 }
 

@@ -1,0 +1,63 @@
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+#hfirst {
+    display: flex;
+    height: 50%;
+    width: 100%;
+    background-color: antiquewhite;
+}
+#hsecond {
+    height: 50%;
+    display: flex;
+    background-color: aliceblue;
+}
+#fcolumn1 {
+    background-color: aliceblue;
+    flex: 1;
+}
+#fcolumn2 {
+    background-color: beige;
+    flex-direction: column;
+    display: flex;
+    flex: 1;
+}
+
+
+#fc21{
+    flex: 1;
+}
+
+#fc22{
+    flex: 1;
+}
+
+#scolumn1{
+    /*background-color: aqua;*/
+    flex-direction: row;
+    display: flex;
+    width: 50%;
+    flex: 1;
+
+}
+#scolumn2{
+    background-color: blue;
+    width: 50%;
+
+}
+
+#sc11{
+    flex: 1;
+    background-color: rgb(90, 46, 83);
+}
+
+#sc12{
+    flex:1;
+    background-color: rgb(223, 79, 12);
+}
+
+div{
+    border: 1px solid black;
+}
