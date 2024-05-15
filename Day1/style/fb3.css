@@ -1,0 +1,166 @@
+* {
+    /*box-sizing: border-box*/
+    margin: 0px;
+  }
+
+  .col-1{width: 100%;}
+  .col-2{width: 75%;}
+  .col-3{width: 50%;}
+  .col-4{width: 25%;}
+  .col-5{width: 33.3%;}
+  .col-6{width: 90%;}
+  .col-7{width: 80%}
+  
+
+  .bg-body{
+    background-color: #ffffff;
+  }
+  .bg-upper{
+    background-color: #f0f2f5;
+  }
+
+.main-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.upper-box{
+    flex: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+.upper-left{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 1000px;
+}
+.ul-1{
+    flex: 25%;
+}
+
+.ul-2{
+    flex: 50%;
+}
+.ul-3{
+    flex: 25%;
+}
+
+.ul-2-logo{
+    position: relative;
+    left: 50px;
+    top: 25%;
+
+}
+.logo-image{
+    width: 360px;
+    height: 75px;
+}
+
+.ul-2-caption{
+    position: relative;
+    left: 50px;
+    top: 30%;
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 35px;
+
+}
+.upper-right{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 1000px;
+}
+
+.login-main{
+    position: relative;
+    height: 440px;
+    left: 5%;
+    top: 5%;
+    border-radius: 6px;
+    
+}
+.login-inner{
+    position: relative;
+    top: 40px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    /*border: 1px black solid;*/
+}
+
+.input-1{
+    margin-bottom: 20px;
+    margin-left: 55px;
+    height: 55px;
+    border-radius: 6px;
+    font-size: 20px;
+    border-color: #a8a9ac;
+    border-width: 0.5px;
+}
+
+.input-2{
+    margin-bottom: 20px;
+    margin-left: 55px;
+    height: 55px;
+    border-radius: 6px;
+    font-size: 20px;
+    border-color: #a8a9ac;
+    border-width: 0.5px;
+}
+
+.btn-1{
+    margin-bottom: 20px;
+    margin-left: 55px;
+    height: 55px;
+    border-radius: 6px;
+    background-color: #0866ff;
+    color: #ffffff;
+    font-size: 20px;
+    border-color: #a8a9ac;
+    border-width: 0.5px;
+}
+
+.btn-2{
+    
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 155px;
+    height: 55px;
+    border-radius: 6px;
+    background-color: #42b72a;
+    color: #ffffff;
+    font-size: 20px;
+    border-color: #a8a9ac;
+    border-width: 0.5px;
+}
+
+.forgotten{
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    margin-bottom: 20px;
+
+}
+
+.ur-1{
+    flex: 25%;
+}
+
+.ur-2{
+    flex: 50%;
+}
+.ur-3{
+    flex: 25%;
+}
+
+.footer{
+    flex: auto;
+    height: auto;
+    
+}
+

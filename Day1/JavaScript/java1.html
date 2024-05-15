@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="show()"> Click Me </button>
+    <script>
+        function show()
+        {   
+            var a=10;
+            let b=20;
+            sum = a + b;
+            console.log("Hello world\n" + sum);
+            if(sum % 2 ==0)
+            {
+                console.log(sum + " Is an even number");
+
+            }else{
+                console.log(sum + " Is an odd number");
+            }
+
+            var arr=["Apple", "Orange", 37,2.5];
+            console.log(arr);
+            console.log(arr[2]);
+
+            var obj=[
+                {name:"Abdul",age:20,Work:"IT"},
+                {name:"Rahmath", age:20,Work:"IT"},
+                {name:"Nabeel",age:10,Work:"Student"}
+            ]
+
+            for(var i=0;i<3;i++)
+            {
+                console.log(obj[i].name);
+            }
+        }
+    </script>
+</body>
+</html>
