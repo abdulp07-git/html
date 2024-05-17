@@ -15,6 +15,8 @@ function EqualResult()
 {
     var text=document.getElementById('output').value;
     var result=eval(text);
-    console.log(result);
+    
     document.getElementById('output').value=result;
 }
+
+

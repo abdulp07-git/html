@@ -12,6 +12,7 @@
     cursor: none;
     border-radius: 6px;
     pointer-events: none;
+    text-align: right;
 }
 
 .btn1{
