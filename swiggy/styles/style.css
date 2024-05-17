@@ -19,9 +19,9 @@ body{
     margin: 0px;
     
 }
-.root2{
+.page_boundry{
    height: 100%;
-   border: 1px solid black;
+   /*border: 1px solid black;*/
    margin-left: 150px;
    margin-right: 150px;
 }
@@ -45,18 +45,19 @@ body{
     /*border: 1px solid black;*/
     align-items: center;
 }
-.logo-container{
+.hlogo{
     
     margin-top: 20px;
     margin-bottom: 20px;
     flex: 0 0 auto;
     /*border: 1px solid black;*/
 }
-.other-button{
+.h_other{
     flex: 0 0 auto;
     align-items: center;
     margin-left: 40px;
     margin-right: 100px;
+    color: #686b78;
     /*border: 1px solid black;*/
 
 }
@@ -78,17 +79,17 @@ body{
     /*margin-right: 50px;*/
     margin-left: 50px;
 }
-.li1-main{
+.li_container{
     display: flex;
     flex-direction: row;
 }
 
-.lileft{
+.li_left{
     flex: 0 0 auto;
     margin-right: 5px;
     align-items: center;
 }
-.liright{
+.li_right{
     flex: 0 0 auto;
     margin-right: 5px;
     align-items: center;
@@ -101,7 +102,7 @@ body{
     /*border: 1px solid black;*/
 }
 
-.uline{
+.menu_font{
     text-decoration: none;
     font-family: ProximaNova, arial, Helvetica Neue, sans-serif;
 }
@@ -109,9 +110,11 @@ body{
 a:visited {
     color: inherit;
 }
+/**
 .liright{
     margin-left: 2px;
 }
+*/
 
 
 
@@ -122,7 +125,7 @@ a:visited {
 /** Header section finished */
 
 /**Banner starts */
-.btag-cap{
+.tag_button{
     display: flex;
 
     align-items: center;
@@ -130,14 +133,14 @@ a:visited {
 
 }
 
-.btag{
+.tag{
     font-weight: 500;
     font-family: Basis_Grotesque_Pro;
     
     flex: 0 0 91.5%;
     /*border: 1px solid black;*/
 }
-.bbutton{
+.lr_button{
     
     flex: 1 0;
     align-items: center;
@@ -158,7 +161,7 @@ a:visited {
 
 
 
-.bmain{
+.banner_image_container{
     display: flex;
     overflow: hidden;
     margin-top: 51px;
@@ -187,23 +190,8 @@ a:visited {
 
 /**To restaurents start */
 
-.top_rest-cap{
-    display: flex;
-    margin-left: 100px;
-    margin-right: 100px;
-    /**border: 1px solid black;*/
-    align-items: center;
-}
 
-.top_rest_tag{
-    flex: 0 0 80%;
-}
-
-.top_rest_button{
-    flex: 0 0 20%;
-}
-
-.top_rest_image{
+.top_rest_image_container{
     display: flex;
     margin-top: 75px;
     margin-left: 0px;
@@ -213,17 +201,47 @@ a:visited {
     /*border: 1px solid black;*/
 }
 
-.top {
+.tr_image_description {
     flex: 1;
     align-items: center;
-    /*border: 1px solid black;*/
+    /**border: 1px solid black;*/
 }
 
-.top1{
+.tr_image{
     margin-left: 35px;
     border-radius: 10px;
     width: 250px;
     height: 150px
+}
+.tr_description{
+    display: flex;
+    flex-direction: column;
+    margin-left: 35px;
+    text-align: left;
+    /**border: 1px solid black;*/
+
+}
+
+.rest-time-star{
+    /**border: 1px solid black;*/
+    text-align: justify;
+}
+
+.rest_name{
+    margin-bottom: 5px;
+
+}
+
+.rest_time{
+    margin-bottom: 5px;
+}
+
+.rest_item{
+    margin-bottom: 5px;
+}
+
+.rest_loc{
+    margin-bottom: 5px;
 }
 
 /**top restaurents finish */
