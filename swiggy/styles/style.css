@@ -1,3 +1,10 @@
+/**
+
+Flex placing
+https://www.youtube.com/watch?v=K74l26pE4YA
+
+*/
+
 body{
     background-color: #fff;
 }
@@ -21,7 +28,7 @@ body{
 }
 .page_boundry{
    height: 100%;
-   /*border: 1px solid black;*/
+   border: 1px solid black;
    margin-left: 150px;
    margin-right: 150px;
 }
@@ -60,7 +67,29 @@ body{
     color: #686b78;
     /*border: 1px solid black;*/
 
+
+
 }
+
+
+.other-button{
+    padding: 10px;
+    font-size: 14px;
+    width: 75px;
+    margin-top: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+
+
+
 .menus{
     display: flex;
     justify-content: flex-start;
@@ -136,10 +165,11 @@ a:visited {
 .tag{
     font-weight: 500;
     font-family: Basis_Grotesque_Pro;
-    
     flex: 0 0 91.5%;
     /*border: 1px solid black;*/
 }
+
+
 .lr_button{
     
     flex: 1 0;
@@ -189,6 +219,11 @@ a:visited {
 
 
 /**To restaurents start */
+
+.top_rest_root{
+    height: 100%;
+    /*border: 1px solid black;*/
+}
 
 
 .top_rest_image_container{
@@ -245,3 +280,178 @@ a:visited {
 }
 
 /**top restaurents finish */
+
+
+
+/**Online Start*/
+
+.online_container{
+    
+    /*border: 1px solid black;*/
+}
+
+.tag_online{
+    margin-top: 35px;
+    width: 100%;
+    font-weight: 500;
+    font-family: Basis_Grotesque_Pro;
+    /*border: 1px solid black;*/
+}
+
+.filter_grid{
+    margin-top: 70px;    ;
+}
+
+.btn_filter{
+    margin-right: 30px;
+    border-radius: 10px;
+    height: 30px;
+}
+
+.online_table{
+    margin-top: 70px;
+}
+
+
+.button_table{
+    margin-top: 20px;
+    /*border: 1px solid black;*/
+}
+
+
+.restaurant-button {
+    padding: 10px;
+    font-size: 14px;
+    width: 280px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px  ;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.restaurant-button:hover {
+    background-color: #f7f7f7;
+    border-color: #ccc;
+}
+
+.restaurant-button span {
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+.explore{
+    display: flex;
+}
+
+.explore_left{
+    flex: 1;
+    /*border: 1px solid black;*/
+}
+
+.explore_right{
+    flex: 1;
+    /*border: 1px solid black;*/
+}
+
+.explore-button{
+    padding: 10px;
+    font-size: 14px;
+    width: 607px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px  ;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Online end here */
+/*app start here */
+
+.app_container{
+    display: flex;
+    margin-top: 150px;
+    height: 100px;
+    /*border: 1px solid black;*/
+}
+
+.app_left {
+    flex: 1;
+    justify-content: center;
+    align-items: center;  
+    /*border: 1px solid black;*/
+    
+}
+
+.app_right{
+    flex: 1;
+    /*border: 1px solid black;*/
+}
+
+.play_img{
+    width: 160px;
+    height: 50px;
+}
+
+.app_img{
+    margin-top: 20px;
+    width: 150px;
+    height: 50px;
+}
+
+.app_h2{
+    margin-top: 20px;
+    margin-left: 240px;
+    margin-right: 40px;
+}
+/*app end here */
+
+/*footer start here*/
+
+.footer{
+    height: 500px;
+    display: flex;
+    border: 1px solid black;
+    background-color: black;
+}
+
+.footer_left{
+    flex: 0 0 33%;
+    border: 1px solid black;
+}
+
+.footer_right{
+    flex: 67%;
+    margin-top: 20px;
+    margin-left: 20px;
+    border: 1px solid black;
+}
+
+.f_th{
+    width: 200px;
+    height: 20px;
+    text-align: left;
+    color: #f7f7f7;
+}
+.f_td{
+    width: 200px;
+    height: 20pxpx;
+    color: #f7f7f7;
+    
+}
+
+.about_table{
+    margin-top: 35px;
+}
+
+.about_table_a{
+    text-decoration: none;
+}
