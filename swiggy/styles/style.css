@@ -10,7 +10,7 @@ body{
 }
 
 .ccolor{
-    background-color: #fff;
+    background: linear-gradient(to bottom, #f1f1f1, #ffffff);
 }
 
 .apparea{
@@ -28,7 +28,7 @@ body{
 }
 .page_boundry{
    height: 100%;
-   border: 1px solid black;
+   /*border: 1px solid black;*/
    margin-left: 150px;
    margin-right: 150px;
 }
@@ -87,6 +87,9 @@ body{
     transition: background-color 0.3s, border-color 0.3s;
 }
 
+.logo_color{
+    color: #f56910;
+}
 
 
 
@@ -111,17 +114,22 @@ body{
 .li_container{
     display: flex;
     flex-direction: row;
+    
 }
 
 .li_left{
     flex: 0 0 auto;
+    
     margin-right: 5px;
     align-items: center;
+    
 }
 .li_right{
     flex: 0 0 auto;
+    margin-top: 3px;
     margin-right: 5px;
     align-items: center;
+    
 }
 
 
@@ -154,19 +162,30 @@ a:visited {
 /** Header section finished */
 
 /**Banner starts */
+
+
+.tag_button_container{
+    /*border: 1px solid black;*/
+    background: linear-gradient(to bottom, #f1f1f1, #ffffff);
+    height: 130px;
+}
 .tag_button{
     display: flex;
 
     align-items: center;
-    /*border: 1px solid black;*/
-
+    
 }
 
 .tag{
-    font-weight: 500;
+
     font-family: Basis_Grotesque_Pro;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 28px;
+    color: rgba(2, 6, 12, 0.92);
+    letter-spacing: -0.4px;
     flex: 0 0 91.5%;
-    /*border: 1px solid black;*/
+    
 }
 
 
@@ -176,17 +195,19 @@ a:visited {
     align-items: center;
     margin-left: auto;
     height: 50px;
-    /*border: 1px solid black;*/
+    
 }
 
 .round-button{
     border-radius: 75%;
-    
+    background-color: #e1e1e6;
     gap: 30px;
-    width: 50px;
-    height: 100%;
+    width: 40px;
+    margin-top: 3px;
+    margin-left: 3px;
+    height: 80%;
     font-size: large;
-    
+    border: none;
 }
 
 
@@ -194,7 +215,6 @@ a:visited {
 .banner_image_container{
     display: flex;
     overflow: hidden;
-    margin-top: 51px;
     margin-left: 75px;
     margin-right: 75px;
     /*border: 1px solid black;*/
@@ -254,8 +274,25 @@ a:visited {
     margin-left: 35px;
     text-align: left;
     /**border: 1px solid black;*/
-
 }
+.rest_description_font{
+    margin: 0px;
+    -webkit-font-smoothing: antialiased;
+    font-family: Basis_Grotesque_Pro_Bold;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: -0.3px;
+    color: rgba(2, 6, 12, 0.75);
+    overflow: hidden;
+    width: 100%;
+    display: -webkit-box;
+    overflow-wrap: break-word;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+
 
 .rest-time-star{
     /**border: 1px solid black;*/
@@ -290,22 +327,55 @@ a:visited {
     /*border: 1px solid black;*/
 }
 
+.onlie_table_structure{
+    border-spacing: 5px 35px;
+}
+
+
 .tag_online{
-    margin-top: 35px;
-    width: 100%;
-    font-weight: 500;
-    font-family: Basis_Grotesque_Pro;
+    
+    
+    /*width: 100%;*/
+    
+    
     /*border: 1px solid black;*/
+
+    margin-top: 35px;
+    font-family: Basis_Grotesque_Pro;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 28px;
+    color: rgba(2, 6, 12, 0.92);
+    letter-spacing: -0.4px;
+    flex: 0 0 91.5%;
+
+
+
+
 }
 
 .filter_grid{
-    margin-top: 70px;    ;
+    background-color: #fff;
+    position: sticky;
+    top: 0px;
+    margin-top: 70px;    
 }
 
 .btn_filter{
     margin-right: 30px;
     border-radius: 10px;
+    border: none;
     height: 30px;
+    -webkit-font-smoothing: antialiased;
+    font-family: Basis_Grotesque_Pro;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.3px;
+    color: rgba(2, 6, 12, 0.75);
+
+
+
 }
 
 .online_table{
@@ -380,20 +450,36 @@ a:visited {
     display: flex;
     margin-top: 150px;
     height: 100px;
-    /*border: 1px solid black;*/
+    background-color: #f0f0f5;
+    
 }
 
 .app_left {
     flex: 1;
+    padding-left: 20px;
     justify-content: center;
     align-items: center;  
-    /*border: 1px solid black;*/
     
 }
 
+.app_left_font{
+    margin-top: 22px;
+    margin-left: 317px;
+    -webkit-font-smoothing: antialiased;
+    font-family: Basis_Grotesque_Pro;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+    color: rgba(2, 6, 12, 0.75);
+    
+}
+
+
+
 .app_right{
     flex: 1;
-    /*border: 1px solid black;*/
+    
 }
 
 .play_img{
@@ -420,10 +506,11 @@ a:visited {
     height: 500px;
     display: flex;
     border: 1px solid black;
-    background-color: black;
+    background-color: #02060c;
 }
 
 .footer_left{
+    display: flex;
     flex: 0 0 33%;
     border: 1px solid black;
 }
@@ -435,6 +522,84 @@ a:visited {
     border: 1px solid black;
 }
 
+
+
+.about_table{
+    margin-top: 35px;
+}
+
+.about_table_a{
+    text-decoration: none;
+}
+
+
+.f_logo_tag_container{
+    margin-top: 35px;
+    margin-left: 35px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_logo_tag{
+    
+    -webkit-font-smoothing: antialiased;
+    font-family: Basis_Grotesque_Pro;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.4px;
+    color: rgba(255, 255, 255, 0.92);
+    margin-left: 10px;
+}
+
+.f_logo{
+    margin-left: 250px;
+    /*border: 1px solid rgb(235, 229, 229);*/
+}
+
+.footer_logo_cap{
+    flex: 1;
+    /*border: 1px solid rgb(236, 229, 229);*/
+    margin-left: 250px;
+    margin-top: 20px;
+    -webkit-font-smoothing: antialiased;
+    font-family: Basis_Grotesque_Pro;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.3px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+
+
+.f_th {
+    -webkit-font-smoothing: antialiased;
+    font-family: Basis_Grotesque_Pro_Bold;
+    text-align: left;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -0.3px;
+    color: rgba(255, 255, 255, 0.92);
+}
+
+.f_td{
+    -webkit-font-smoothing: antialiased;
+    font-family: Basis_Grotesque_Pro_Bold;
+    text-align: left;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.3px;
+    color: rgba(255, 255, 255, 0.92);
+}
+
+.footer_table{
+    border-spacing: 140px 10px;
+}
+
+/*  ORIGINAL
 .f_th{
     width: 200px;
     height: 20px;
@@ -447,11 +612,5 @@ a:visited {
     color: #f7f7f7;
     
 }
+*/
 
-.about_table{
-    margin-top: 35px;
-}
-
-.about_table_a{
-    text-decoration: none;
-}
