@@ -614,3 +614,24 @@ a:visited {
 }
 */
 
+.zoom {
+    
+    transition: transform .2s; /* Animation */
+    margin: 0 auto;
+  }
+  
+  .zoom:hover {
+    transform: scale(0.90); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+  a:hover{
+    color: #f56910;
+  }
+
+  .round-button:hover{
+    background-color: #f56910;
+  }
+
+  .btn_filter:hover{
+    background-color: #f56910;
+  }
