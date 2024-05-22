@@ -144,9 +144,14 @@ body{
     font-family: ProximaNova, arial, Helvetica Neue, sans-serif;
 }
 
+.menu_font:visited{
+    color: #3d4152;;
+}
+
+/*
 a:visited {
     color: inherit;
-}
+}*/
 /**
 .liright{
     margin-left: 2px;
@@ -530,6 +535,10 @@ a:visited {
 
 .about_table_a{
     text-decoration: none;
+}
+
+.about_table_a:visited{
+    color: rgba(255, 255, 255, 0.92);
 }
 
 
