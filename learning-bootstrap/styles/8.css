@@ -1,0 +1,21 @@
+.container-lg{
+    background-color: pink;
+    height: 100px;
+}
+
+
+.row{
+    background-color: greenyellow;
+    border: 2px solid black;
+}
+
+.col-md {
+    background-color: lightblue;
+    border: 1px solid black;
+}
+
+@media (min-width: 767px) {
+    .container-lg {
+        height: 150px;
+    }
+}

@@ -1,0 +1,61 @@
+
+/* https://www.youtube.com/watch?v=NamTeu71UE4&list=PL1JrLEBAapUWqs_HbcYngAOmpPbiccqNy&index=3*/
+
+.container-xl{
+    background-color: #d1b2b2;
+    border: 1px solid black;
+    height: 100px;
+}
+
+.container-fluid{
+    background-color: #6d0e0e;
+    border: 1px solid black;
+    height: 200px;
+}
+
+
+@media (min-width:2000px) {
+    .container{
+        max-width: 2000px;
+    }
+}
+
+
+.container-md{
+    background-color: aliceblue;
+    border: 9px solid red;
+}
+
+.row{
+    background-color: #d1b2b2;
+    border: 6px solid black;
+}
+
+.col, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col-sm-4, .col-md-4 {
+    background-color: tomato;
+    border: 3px solid green;
+}
+
+
+
+
+.box1{
+    height: 400px;
+    width: 400px;
+    background-color: pink;
+}
+
+.box2{
+
+    background-color: pink;
+}
+
+.box3{
+    height: 400px;
+    width: 400px;
+    background-color: rgb(192, 255, 192);
+}
+
+span{
+    background-color: lightgreen;
+}
