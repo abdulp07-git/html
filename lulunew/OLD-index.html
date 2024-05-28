@@ -12,148 +12,125 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <title>Document</title>
-    <style>
-        .max-height {
-            max-height: 75px;
-        }
-        .w-60 {
-            width: 60%;
-        }
-        @media (max-width: 991.98px) {
-            .col-lg-3, .col-lg-6 {
-                display: inline-block;
-                vertical-align: middle;
-                width: auto;
-            }
-            .col-lg-3 img, .col-lg-6 input, .col-lg-6 button {
-                display: inline-block;
-                vertical-align: middle;
-            }
-
-            .col-lg-3 a {
-                max-height: 35px;
-            }
-
-            #logo {
-                text-align: left;
-            }
-            #cart, #lens {
-                text-align: right;
-            }
-        }
-    </style>
-
 </head>
 <body>
+    <div class="container-fluid" id="root">
 
-    <div class="container-fluid">
-        <div class="row d-flex flex-wrap align-items-center" id="root">
-            <div class="col-lg-3 d-flex justify-content-between align-items-center mb-3 mb-lg-0">
-                <img class="img-fluid w-60" src="images/lulu-logo-new.png" alt="" style="max-width: 175px; max-height: 75px;" id="logo">
+
+        <div class="row justify-content-between align-items-center">
+            <div class="col">
+                <img class="img-fluid w-75" src="images/lulu-logo-new.png" alt="">
             </div>
-
-            <div class="col-lg-6 d-flex justify-content-center align-items-center mb-3 mb-lg-0">
-                <input class="form-control form-control-sm w-75 max-height d-none d-lg-flex" type="text" placeholder="What are you looking for?" id="input">
-                <button class="btn max-height" id="lens">
+            <div class="col-5 d-flex">
+                <input class="form-control w-100 shadow-none" type="text" name="" placeholder="What are you looking for?">
+                <button class="btn shadow-none">
                     <i class="fa fa-search text-success"></i>
                 </button>
             </div>
+            
+            <div class="col d-none d-sm-flex">
+                <button class="btn btn-primary shadow-none">Home delivery</button>
+            </div>
 
-            <div class="col-lg-3 d-flex justify-content-center justify-content-lg-end align-items-center">
-                <div class="d-none d-lg-block me-2" id="home">
-                    <button class="btn btn-success max-height" style="max-width: 150px;">Home Delivery</button>
+
+            <div class="col d-flex justify-content-end">
+                <div class="d-flex align-items-center">
+                    <img class="img-fluid" src="images/login-logo.png" alt=""> <span class="text-success"> Login </span>
                 </div>
-                <div class="d-none d-lg-flex align-items-center me-2" id="login">
-                    <img class="img-fluid max-height" src="images/login-logo.png" alt=""> <span class="text-success ms-2"> Login </span>
-                </div>
-                <div>
-                    <a id="cart" href="#">
+            </div>
+
+
+            <div class="col d-flex justify-content-end">
+                <div class="d-flex align-items-center">
+                    <a href="#">
                         <svg class="r1_col5_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
                             <path d="M7 4H2V6H4.58L6.74 13.24L5.24 15.5C5.08 15.78 5 16.09 5 16.41C5 17.3 5.7 18 6.59 18H19V16H6.62C6.57 16 6.53 15.95 6.53 15.9L7.25 14H17.42C18.11 14 18.68 13.59 18.89 12.96L20.91 7.45C21.03 7.11 21 6.74 20.83 6.43C20.66 6.12 20.37 5.9 20.03 5.81L7.77 2.23L7 4ZM7 16H19V18H7C5.9 18 5 17.1 5 16C5 15.47 5.2 15 5.53 14.68L7 16ZM9 21C10.1 21 11 20.1 11 19C11 17.9 10.1 17 9 17C7.9 17 7 17.9 7 19C7 20.1 7.9 21 9 21ZM18 21C19.1 21 20 20.1 20 19C20 17.9 19.1 17 18 17C16.9 17 16 17.9 16 19C16 20.1 16.9 21 18 21Z" stroke="#00a651" fill="none" stroke-width="1.5"></path>
                         </svg>
                     </a>
                 </div>
             </div>
+                
         </div>
-    </div>
 
 
 
+        <!--Row-1 completed-->
 
 
 
-    <!--row 2-->
-
-    <div class="row d-flex" style="background-color: #00a651;">
+        <div class="row d-flex justify-content-center" style="background-color: #00a651;">
             
-        <div class="col-lg-2 d-flex justify-content-between align-items-center d-none d-lg-flex">
-           
-            <div>
-                    <img class="img-fluid w-50" src="images/flag_in.png" alt="">
-            </div>
-
-
-            <div class="d-none d-lg-flex">
+            <div class="col-sm-12 col-md-2 p-0 d-flex align-items-center">
                
-                    <p class="text-right">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 19" width="19" height="19">
-                            <!-- First row -->
-                            <circle cx="2" cy="2" r="2" fill="white"></circle>
-                            <circle cx="9.5" cy="2" r="2" fill="white"></circle>
-                            <circle cx="17" cy="2" r="2" fill="white"></circle>
-                            
-                            <!-- Second row -->
-                            <circle cx="2" cy="9.5" r="2" fill="white"></circle>
-                            <circle cx="9.5" cy="9.5" r="2" fill="white"></circle>
-                            <circle cx="17" cy="9.5" r="2" fill="white"></circle>
-                            
-                            <!-- Third row -->
-                            <circle cx="2" cy="17" r="2" fill="white"></circle>
-                            <circle cx="9.5" cy="17" r="2" fill="white"></circle>
-                            <circle cx="17" cy="17" r="2" fill="white"></circle>
-                        </svg>
-                    </p>
-                   
-            </div>
-
-        </div>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="p-0 align-self-start rounded-circle">
+                        <img class="img-fluid w-25" src="images/flag_in.png" alt="">
+                    </div>
+                </div>
 
 
-
-
-        <div class="col-lg-6 d-none d-lg-flex align-items-left">
-            <div class="btn-group p-0" role="group" aria-label="Button group">
-                <button type="button" class="btn btn-success"><p class="font-weight-normal">GROCERY</p></button>
-                <button type="button" class="btn btn-success"><p class="font-weight-normal">FRESH FOOD</p></button>
-                <button type="button" class="btn btn-success"><p class="font-weight-normal">ELECTRONICS</p></button>
-                <button type="button" class="btn btn-success"><p class="font-weight-normal">MOBILES</p></button>
-                <button type="button" class="btn btn-success"><p class="font-weight-normal">LIFE STYLE</p></button>
-                <button type="button" class="btn btn-success"><p class="font-weight-normal">HOME & LIVING</p></button>
-                <button type="button" class="btn btn-warning"><p class="font-weight-normal">DEALS</p></button>
-            </div>
-        </div>
-
-
-
-        <div class="col-lg-4 d-flex  text-white justify-content-between align-items-center">
-            
-
-                    <div class="col">
-                        <span class="max-height">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" max-height="20" width="29">
-                                <path d="M12 2C8.13 2 5 5.13 5 9c0 3.25 2.92 7.75 6.16 11.26.42.47 1.26.47 1.68 0C16.08 16.75 19 12.25 19 9c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5 14.5 7.62 14.5 9 13.38 11.5 12 11.5z" stroke="white" stroke-width="2" fill="none"></path>
+                <div class="col-sm-12 col-md-6 col-lg-6 align-items-center">
+                    <div class="p-0">
+                        <p class="text-right">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 19" width="19" height="19">
+                                <!-- First row -->
+                                <circle cx="2" cy="2" r="2" fill="white"></circle>
+                                <circle cx="9.5" cy="2" r="2" fill="white"></circle>
+                                <circle cx="17" cy="2" r="2" fill="white"></circle>
+                                
+                                <!-- Second row -->
+                                <circle cx="2" cy="9.5" r="2" fill="white"></circle>
+                                <circle cx="9.5" cy="9.5" r="2" fill="white"></circle>
+                                <circle cx="17" cy="9.5" r="2" fill="white"></circle>
+                                
+                                <!-- Third row -->
+                                <circle cx="2" cy="17" r="2" fill="white"></circle>
+                                <circle cx="9.5" cy="17" r="2" fill="white"></circle>
+                                <circle cx="17" cy="17" r="2" fill="white"></circle>
                             </svg>
-                            Deliver To: Edappally
-                        </span>
+                        </p>
+                        
                     </div>
 
-                <div class="col">
-                    <p class="align-items-center" id="demo"></p>
                 </div>
-            
-        </div>
 
-    </div>
+            </div>
+
+            <div class="col-md-6 d-none d-lg-flex p-0 m-0 align-items-center">
+                <div class="btn-group p-0" role="group" aria-label="Button group">
+                    <button type="button" class="btn btn-success"><p class="font-weight-normal">GROCERY</p></button>
+                    <button type="button" class="btn btn-success"><p class="font-weight-normal">FRESH FOOD</p></button>
+                    <button type="button" class="btn btn-success"><p class="font-weight-normal">ELECTRONICS</p></button>
+                    <button type="button" class="btn btn-success"><p class="font-weight-normal">MOBILES</p></button>
+                    <button type="button" class="btn btn-success"><p class="font-weight-normal">LIFE STYLE</p></button>
+                    <button type="button" class="btn btn-success"><p class="font-weight-normal">HOME & LIVING</p></button>
+                    <button type="button" class="btn btn-warning"><p class="font-weight-normal">DEALS</p></button>
+                </div>
+            </div>
+
+
+            <div class="col col-sm-12 col-md-4 p-0 d-flex  text-white justify-content-start">
+                
+                    <div class="col d-flex align-items-center p-0">
+                        <div class="col">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="29" width="29">
+                                    <path d="M12 2C8.13 2 5 5.13 5 9c0 3.25 2.92 7.75 6.16 11.26.42.47 1.26.47 1.68 0C16.08 16.75 19 12.25 19 9c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5 14.5 7.62 14.5 9 13.38 11.5 12 11.5z" stroke="white" stroke-width="2" fill="none"></path>
+                                </svg>
+                                Deliver To: Edappa
+                            </span>
+                        </div>
+                        
+                        
+                    </div>
+
+                    <div class="col d-flex align-items-center">
+                        <p class="align-items-center" id="demo"></p>
+                    </div>
+                
+            </div>
+
+        </div>
 
 
       
@@ -217,13 +194,13 @@
         <!-- The slideshow -->
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="img-fluid w-100" src="images/s1.jpg" alt="Los Angeles">
+            <img src="images/s1.jpg" alt="Los Angeles">
           </div>
           <div class="carousel-item">
-            <img class="img-fluid w-100" src="images/s2.jpg" alt="Chicago">
+            <img src="images/s2.jpg" alt="Chicago">
           </div>
           <div class="carousel-item">
-            <img class="img-fluid w-100" src="images/s3.jpg" alt="New York">
+            <img src="images/s3.jpg" alt="New York">
           </div>
         </div>
       
@@ -665,7 +642,7 @@
                     <img class="img-fluid w-100 h-75" src="images/l1.jpg" alt="">
                 </div>
                 <div style="background-color: #66ca97;">
-                    <span></span><strong>HOME</strong></span>
+                    <span><h1><strong>HOME</strong></h1> </span>
                 </div>
                 <div style="background-color: #66ca97;">
                     <span><h1 class="text-white" ><strong>& DECOR</strong></h1></span>

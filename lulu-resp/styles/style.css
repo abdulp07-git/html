@@ -8,10 +8,41 @@
     
 }
 
-body{
-    
+
+
+#root{
+    background-color: #efefef
 }
 
+
+
+*{
+  font-size: small;
+}
+
+.max-height{
+  max-height: 30px;
+}
+
+
+
+
+/**
+  
+  @media screen and (max-width: 992px) {
+    #root {
+      background-color: blue;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    #root {
+      background-color: olive;
+    }
+  }
+
+
+*/
 
 
 a {
