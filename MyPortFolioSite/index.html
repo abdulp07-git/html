@@ -628,7 +628,7 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form action="https://script.google.com/macros/s/AKfycbyI2uLK2YI1cOivFYptgD_jjsz5laktp-anTV5nAZP0Z1d9nv8hagWuPoJXCCLfZNbz/exec" method="post" role="form"  id="gform">
+            <form action="https://script.google.com/macros/s/AKfycbyI2uLK2YI1cOivFYptgD_jjsz5laktp-anTV5nAZP0Z1d9nv8hagWuPoJXCCLfZNbz/exec" method="post" role="form"  id="gform" onsubmit="return validateEmail()">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -728,6 +728,21 @@
       xhr.send(formData);
     });
   </script>
+
+
+
+<script>
+  function validateEmail() {
+      var email = document.getElementById('email').value;
+      var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (emailPattern.test(email)) {
+          return true; // Email is valid, form can be submitted
+      } else {
+          alert('Please enter a valid email address.');
+          return false; // Prevent form submission
+      }
+  }
+</script>
 
 
 </body>
