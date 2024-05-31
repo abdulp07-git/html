@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="styles/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<title>HomePage - LuLu Hypermarket India</title>
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <style>
+        .max-height {
+            max-height: 75px;
+        }
+        .w-60 {
+            width: 60%;
+        }
+
+        
+        @media (max-width: 991.98px) {
+
+            /*first row to inline */
+            .col-lg-3, .col-lg-6 {
+                display: inline-block;
+                vertical-align: middle;
+                width: auto;
+            }
+            /*
+            .col-lg-3 img, .col-lg-6 input, .col-lg-6 button {
+                display: inline-block;
+                vertical-align: middle;
+            }
+            */
+
+            #root1{
+                justify-content: space-between;
+            }
+
+
+
+
+           
+            .col-lg-3 a {
+                max-height: 35px;
+                margin-top: 0;
+            }
+
+             /*Remove the flag */
+            .col-lg-2 img{
+                display: none;
+            }
+
+            #logo {
+                text-align: left;
+            }
+            #cart, #lens {
+                text-align: right;
+            }
+        }
+        
+    </style>
+
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="row d-flex flex-wrap align-items-center" id="root1">
+            <div class="col-lg-3 d-flex justify-content-between align-items-center mb-3 mb-lg-0">
+                <img class="img-fluid w-60" src="images/lulu-logo-new.png" alt="" style="max-width: 175px; max-height: 75px;" id="logo">
+            </div>
+
+            <div class="col-lg-6 d-flex justify-content-center align-items-center mb-3 mb-lg-0">
+                <input class="form-control form-control-sm w-75 max-height d-none d-lg-flex" type="text" placeholder="What are you looking for?" id="input">
+                <button class="btn max-height" id="lens">
+                    <i class="fa fa-search text-success"></i>
+                </button>
+            </div>
+
+            <div class="col-lg-3 d-flex justify-content-between align-items-center">
+                <div class="d-none d-lg-block me-2" id="home">
+                    <button class="btn btn-success max-height" style="max-width: 150px;">Home Delivery</button>
+                </div>
+                <div class="d-none d-lg-flex align-items-center me-2" id="login">
+                    <img class="img-fluid max-height" src="images/login-logo.png" alt=""> <span class="text-success ms-2"> Login </span>
+                </div>
+                <div class="cart-box">
+                    <a id="cart" href="#">
+                        <svg class="r1_col5_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M7 4H2V6H4.58L6.74 13.24L5.24 15.5C5.08 15.78 5 16.09 5 16.41C5 17.3 5.7 18 6.59 18H19V16H6.62C6.57 16 6.53 15.95 6.53 15.9L7.25 14H17.42C18.11 14 18.68 13.59 18.89 12.96L20.91 7.45C21.03 7.11 21 6.74 20.83 6.43C20.66 6.12 20.37 5.9 20.03 5.81L7.77 2.23L7 4ZM7 16H19V18H7C5.9 18 5 17.1 5 16C5 15.47 5.2 15 5.53 14.68L7 16ZM9 21C10.1 21 11 20.1 11 19C11 17.9 10.1 17 9 17C7.9 17 7 17.9 7 19C7 20.1 7.9 21 9 21ZM18 21C19.1 21 20 20.1 20 19C20 17.9 19.1 17 18 17C16.9 17 16 17.9 16 19C16 20.1 16.9 21 18 21Z" stroke="#00a651" fill="none" stroke-width="1.5"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    
+
+
+
+
+
+
+        <!--row 2-->
+
+    
+
+        <div class="row d-flex" style="background-color: #00a651;" id="root2">
+                
+            <div class="col-lg-2 d-flex justify-content-between align-items-center d-none d-lg-flex">
+            
+                <div>
+                        <img class="img-fluid w-50" src="images/flag_in.png" alt="">
+                </div>
+
+
+                <div class="d-none d-lg-flex">
+                
+                        <p class="text-right">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 19" width="19" height="19">
+                                <!-- First row -->
+                                <circle cx="2" cy="2" r="2" fill="white"></circle>
+                                <circle cx="9.5" cy="2" r="2" fill="white"></circle>
+                                <circle cx="17" cy="2" r="2" fill="white"></circle>
+                                
+                                <!-- Second row -->
+                                <circle cx="2" cy="9.5" r="2" fill="white"></circle>
+                                <circle cx="9.5" cy="9.5" r="2" fill="white"></circle>
+                                <circle cx="17" cy="9.5" r="2" fill="white"></circle>
+                                
+                                <!-- Third row -->
+                                <circle cx="2" cy="17" r="2" fill="white"></circle>
+                                <circle cx="9.5" cy="17" r="2" fill="white"></circle>
+                                <circle cx="17" cy="17" r="2" fill="white"></circle>
+                            </svg>
+                        </p>
+                    
+                </div>
+
+            </div>
+
+
+
+
+            <div class="col-lg-6 d-none d-lg-flex align-items-left">
+                <div class="btn-group p-0" role="group" aria-label="Button group">
+                    <button type="button" class="btn btn-success"><p class="font-weight-normal">GROCERY</p></button>
+                    <button type="button" class="btn btn-success"><p class="font-weight-normal">FRESH FOOD</p></button>
+                    <button type="button" class="btn btn-success"><p class="font-weight-normal">ELECTRONICS</p></button>
+                    <button type="button" class="btn btn-success"><p class="font-weight-normal">MOBILES</p></button>
+                    <button type="button" class="btn btn-success"><p class="font-weight-normal">LIFE STYLE</p></button>
+                    <button type="button" class="btn btn-success"><p class="font-weight-normal">HOME & LIVING</p></button>
+                    <button type="button" class="btn btn-warning"><p class="font-weight-normal">DEALS</p></button>
+                </div>
+            </div>
+
+
+
+            <div class="col-lg-4 d-flex  text-white justify-content-between align-items-center">
+                
+
+                        <div class="col">
+                            <span class="max-height">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" max-height="20" width="29">
+                                    <path d="M12 2C8.13 2 5 5.13 5 9c0 3.25 2.92 7.75 6.16 11.26.42.47 1.26.47 1.68 0C16.08 16.75 19 12.25 19 9c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5 14.5 7.62 14.5 9 13.38 11.5 12 11.5z" stroke="white" stroke-width="2" fill="none"></path>
+                                </svg>
+                                Deliver To: Edappally
+                            </span>
+                        </div>
+
+                    <div class="col">
+                        <p class="align-items-center text-right" id="demo"></p>
+                    </div>
+                
+            </div>
+
+        </div>
+    </div>
+    <script>
+        let d = new Date();
+        let daysOfWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+        let months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+        
+        let dayOfWeek = daysOfWeek[d.getDay()];
+        let day = d.getDate();
+        let month = months[d.getMonth()];
+        let hours = d.getHours();
+        let minutes = d.getMinutes();
+        
+        let timeString = `${hours < 10 ? '0' + hours : hours}:${minutes < 10 ? '0' + minutes : minutes}`;
+        let dateTime = `${dayOfWeek} | ${day} ${month} | ${timeString}`;
+        
+        document.getElementById("demo").innerHTML = dateTime;
+    </script>
+</body>
+</html>

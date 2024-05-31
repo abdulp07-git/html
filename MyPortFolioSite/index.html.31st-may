@@ -628,11 +628,7 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <!--
-            <form action="https://script.google.com/macros/s/AKfycbw5u9Ce7Fhjnrml6H6o0IPl-rW7J00Tykz1vS8cJCVtoDEd_hyiqkZypR-RIIp_8lldWw/exec" method="post" role="form"  id="gform">
-              -->
-              <form action="" method="post" role="form"  id="gform">
-
+            <form action="https://script.google.com/macros/s/AKfycbyI2uLK2YI1cOivFYptgD_jjsz5laktp-anTV5nAZP0Z1d9nv8hagWuPoJXCCLfZNbz/exec" method="post" role="form"  id="gform" onsubmit="return validateEmail()">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -647,14 +643,14 @@
               <div class="form-group mt-3">
                 <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
               </div>
-              <!--Remove to replace with JS
+              <!--
               <div class="my-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-             Remove to replace with JS-->
-              <div class="text-center"><button type="submit" >Send Message</button></div>
+              -->
+              <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
 
           </div>
@@ -710,9 +706,6 @@
 
 
 
-<!-- Script to perform on form action  -->
-
-
   <script>
     document.getElementById('gform').addEventListener('submit', function(e) {
       e.preventDefault();
@@ -736,6 +729,20 @@
     });
   </script>
 
+
+
+<script>
+  function validateEmail() {
+      var email = document.getElementById('email').value;
+      var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (emailPattern.test(email)) {
+          return true; // Email is valid, form can be submitted
+      } else {
+          alert('Please enter a valid email address.');
+          return false; // Prevent form submission
+      }
+  }
+</script>
 
 
 </body>
